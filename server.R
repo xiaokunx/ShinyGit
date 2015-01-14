@@ -9,6 +9,10 @@ library(shiny)
 
 shinyServer(function(input, output) {
 
+  output$message = renderText({
+    "Hello!!!!!"
+  })
+
   output$distPlot <- renderPlot({
 
     # generate bins based on input$bins from ui.R
